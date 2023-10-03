@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Notiflix from 'notiflix';
-import styles from './Searchbar.module.css';
+import styles from './SearchBar.module.css';
 
 class SearchBar extends Component {
   state = {
@@ -31,7 +31,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <header className={styles.Searchbar}>
+      <header className={styles.SearchBar}>
         <form className={styles.SearchForm} onSubmit={this.handleSubmit}>
           <button type="submit" className={styles.SearchFormButton}>
             <span className={styles.SearchFormButtonLabel}>

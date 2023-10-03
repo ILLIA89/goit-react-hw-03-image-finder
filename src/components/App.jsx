@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 
 import { BASE_URL, API_KEY, SEARCH_PARAMS } from './Pixabay/Pixabay';
 
-import Searchbar from './Searchbar/Searchbar';
+import SearchBar from './SearchBar/SearchBar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
 import LoadMoreButton from './Button/Button';
@@ -95,7 +95,7 @@ class App extends Component {
 
     return (
       <div>
-        <Searchbar onSubmitHandler={this.getValue} />
+        <SearchBar onSubmitHandler={this.getValue} />
 
         {hits.length > 0 && (
           <ImageGallery>
